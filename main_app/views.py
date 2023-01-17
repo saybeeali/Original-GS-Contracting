@@ -2,11 +2,8 @@ from django.shortcuts import render
 from django.views import View 
 # from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from django.views.generic import DetailView
 from .models import Project
-
-
-
-
 
 class Home(TemplateView):
     template_name = "home.html"
@@ -27,3 +24,7 @@ class ProjectList(TemplateView):
             # default header for not searching 
             context["header"] = f"Searching for {name}"
         return context
+class ProjectDetail(DetailView):
+    model = Project
+    template_name = "project_detail.html"
+    

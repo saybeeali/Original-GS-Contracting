@@ -7,10 +7,32 @@
     <h1 class="title">{{project.name}}</h1>
 </div>
 <div class="detail__container">
+    <p>{{project.description}}</p>
 
     <div class="detail__about">
+        <div class="detail__songs mb-5">
         <h4 class="title is-4">Our Work</h4>
-        <p>{{project.description}}</p>
+        <!-- inside container -->
+    
+        
+
+        {% for work in project.work.all %}
+            <div class="song">
+                <span>{{forloop.counter}}</span>
+                <span><b>{{work.name}}</b></span>
+                <img src="{{work.img}}" alt="{{work.name}}" />
+            </div>
+        {% empty %}
+            <article class="message">
+                <div class="message-header">
+                    <p>No Picture Available</p>
+                </div>
+            </article>
+
+        {% endfor %}
+    </div>
+<!--  above about section  -->
+       
     </div>
 </div>
 

@@ -246,3 +246,19 @@ html,body {
   .promo-block .container {
     margin: 1rem 5rem;
   }
+
+  /* .navbar-logo {
+    height: 50px;
+    width: 180px;
+    border: 1px solid red;
+  } */
+
+  .navbar-brand {
+    position: relative;
+    background: url(https://i.imgur.com/S2t3knj.png);
+    width: 170px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

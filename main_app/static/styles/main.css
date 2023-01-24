@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #121212;
     color: #ffffff;
     min-height: 100vh;
@@ -46,11 +46,11 @@ body {
     width: 100%;
     height: 500px;
     /* background-color: #ffffff; */
-    border-radius: 10px;
+    /* border-radius: 10px;
     overflow: hidden;
-  }
+  } */
   
-  .detail__img::after {
+  /* .detail__img::after {
     content: "";
     background-image: linear-gradient(transparent 60%, #1f1f1f);
     position: absolute;
@@ -87,5 +87,91 @@ body {
 
 .work:hover {
     background-color: hsla(0, 0%, 100%, 0.1);
-    cursor: pointer;
+    cursor: pointer; */
+/* } */ 
+/* /HOME PAGE CSSSSSS/ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
+body{
+  background-color: rgb(40, 37, 37);
+}
+
+
+.va {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+a {
+  color: #3b7adf;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3b7adf;
+}
+
+hr {
+  background: #24272c;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url(https://www.homebuilderdigest.com/wp-content/uploads/2019/11/unnamed-3.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+/* .title,
+.subtitle {
+  color: rgb(255, 254, 254);
+} */
+.sub{
+  font-size: 30px;
+  color: white;
+}
+
+
+.blog-posts {
+  min-height: 100vh;
+  background: #929aaa;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+.blog-posts article {
+  padding: 1.5rem;
+}
+
+.blog-posts .post img {
+  border-radius: 6px;
+}
+
+.blog-posts .post .post-category {
+  color: #3b7adf;
+}
+
+.blog-posts .post .post-title {
+  font-size: 2.2rem;
+}
+
+.blog-posts .post .post-excerpt {
+  line-height: 1.5rem;
+  letter-spacing: .03rem;
+  font-size: 1.2rem;
+  font-family: 'IBM Plex Serif', serif;
+  color: #151515;
+}
+
+.blog-posts .post .featured .featured-image img {
+  height: 380px;
 }

@@ -1,4 +1,4 @@
-/* body {
+body {
     background-color: #121212;
     color: #ffffff;
     min-height: 100vh;
@@ -36,7 +36,7 @@
   }
   
   p {
-    font-size: 12px;
+    font-size: 20px;
   }
   
   .detail__img {
@@ -45,12 +45,12 @@
     top: 0;
     width: 100%;
     height: 500px;
-    /* background-color: #ffffff; */
-    /* border-radius: 10px;
+     background-color: #ffffff; 
+     border-radius: 10px;
     overflow: hidden;
-  } */
+  } 
   
-  /* .detail__img::after {
+   .detail__img::after {
     content: "";
     background-image: linear-gradient(transparent 60%, #1f1f1f);
     position: absolute;
@@ -87,8 +87,8 @@
 
 .work:hover {
     background-color: hsla(0, 0%, 100%, 0.1);
-    cursor: pointer; */
-/* } */ 
+    cursor: pointer; 
+ } 
 /* /HOME PAGE CSSSSSS/ */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
@@ -125,7 +125,7 @@ hr {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url(https://www.homebuilderdigest.com/wp-content/uploads/2019/11/unnamed-3.jpg)no-repeat;
+  background: url(https://i.imgur.com/aytumD9.png)no-repeat;
   background-size: cover;
   background-position: center;
   
@@ -144,7 +144,7 @@ hr {
 
 .blog-posts {
   min-height: 100vh;
-  background: #929aaa;
+  background: #ffffff;
   padding-top: 4rem;
   padding-bottom: 10rem;
 }
@@ -192,12 +192,12 @@ html,body {
     font-weight: bold;
   }
   .hero-body
-  {background-image: url(https://i.imgur.com/S2t3knj.png);
+  {background-image: url(https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/26/greek-revival-greenwich-village-7a2416.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
-  background-color: white;
+  background-color: rgb(35, 27, 27);
   }
   .articles {
     margin: 5rem 0;
@@ -250,9 +250,9 @@ html,body {
 
   .navbar-brand {
     position: relative;
-    background: url(https://i.imgur.com/bDmstec.png);
-    width: 150px;
-    height: 20px;
+    background: url(https://i.imgur.com/BYALeHa.png);
+    width: 112px;
+    height: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

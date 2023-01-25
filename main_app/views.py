@@ -22,7 +22,7 @@ class ProjectList(TemplateView):
         else:
             context["projects"] = Project.objects.all()
             # default header for not searching 
-            context["header"] = f"Searching for {name}"
+            context["header"] = f"Search"
         return context
 class ProjectDetail(DetailView):
     model = Project

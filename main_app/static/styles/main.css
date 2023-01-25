@@ -261,4 +261,11 @@ html,body {
 
 .footer-container {
     text-align:center;
+    background-color: red;
+    /* border: 3px solid red */
+}
+
+.footer {
+    /* background-color: red; */
+    background: rgb(196, 208, 225) !important;
 }

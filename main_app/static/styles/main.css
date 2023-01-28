@@ -11,7 +11,7 @@ body {
   }
   
   .container {
-    padding: 40px;
+    /* padding: 40px; */
     padding-right: 0;
   }
   
@@ -259,6 +259,7 @@ html,body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+<<<<<<< HEAD
 }
 
 /* DETAILS CSSSSSSSS */
@@ -270,4 +271,18 @@ html,body {
     height: 500px;
     object-fit:none
   
+=======
+    /* border-radius: 1px solid red; */
+}
+
+.footer-container {
+    text-align:center;
+    background-color: red;
+    /* border: 3px solid red */
+}
+
+.footer {
+    /* background-color: red; */
+    background: rgb(196, 208, 225) !important;
+>>>>>>> 2a876e21bc525efb481d3907140fe4836efabfc0
 }

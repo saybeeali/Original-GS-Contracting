@@ -32,23 +32,7 @@
                         </div>
                     </div>
                 </div>
-                {% comment %} <div class="column">
-                    <div class="card-image">
-                        <figure class="image is-2by1">
-                            <img src="{{work.img}}" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">{{work.name}}</p>
-                                
-                            </div>
-                        </div>
-
-                    
-                    </div>
-                </div> {% endcomment %}
+              
             
             {% endfor %}
         </div>
@@ -60,40 +44,5 @@
         
 
 
-
-{% comment %} <div class="detail__img">
-    <img src="{{project.img}}" alt="{{project.name}}" />
-</div>
-    <h1 class="title">{{project.name}}</h1>
-</div>
-<div class="detail__container">
-    <p>{{project.description}}</p>
-
-    <div class="detail__about">
-        <div class="detail__work mb-5">
-        <h4 class="title is-4">Our Work</h4>
-        <!-- inside container -->
-    
-        
-
-        {% for work in project.work.all %}
-            <div class="work">
-                <span>{{forloop.counter}}</span>
-                <span><b>{{work.name}}</b></span>
-                <img src="{{work.img}}" alt="{{work.name}}" />
-            </div>
-        {% empty %}
-            <article class="message">
-                <div class="message-header">
-                    <p>No Picture Available</p>
-                </div>
-            </article>
-
-        {% endfor %}
-    </div>
-<!--  above about section  -->
-       
-    </div>
-</div> {% endcomment %}
 
 {% endblock %}

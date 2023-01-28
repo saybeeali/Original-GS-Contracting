@@ -69,26 +69,29 @@ body {
   }
 
   .detail__container {
-    margin-top: 500px;
+    margin-top: 50px;
   }
   .detail__work {
-    width: 100%;
+    width: auto;
     display: flex;
-    flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
 .work {
     width: 100%;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 0.1fr 3fr 1fr;
-    border-radius: 5px;
+  
 }
 
 .work:hover {
     background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer; 
  } 
+.wok{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+}
 /* /HOME PAGE CSSSSSS/ */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');

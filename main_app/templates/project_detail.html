@@ -8,87 +8,41 @@
 </div>
 
 <section class="section">
-    <div class="container has-text-centered">
+    <div class="detail__container">
         <h2 class="title">{{project.name}}</h2>
         <p>{{project.description}}</p>
-
-        <div class="columns is-centered" style="padding: 2rem">
-            <div class="column">
-                <div class="card">
+        
+        
+            <div class="detail__work">
+                {% for work in project.work.all %}
+                <div class="work">
                     <div class="card-image">
                         <figure class="image is-2by1">
-                            <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
+                            <img src="{{work.img}}" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
+                                <p class="title is-4">{{work.name}}</p>
+                                
                             </div>
                         </div>
 
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a>
-                            <a href="#">#responsive</a>
-                        </div>
+                    
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-2by1">
-                            <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a>
-                            <a href="#">#responsive</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-2by1">
-                            <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a>
-                            <a href="#">#responsive</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            {% endfor %}
         </div>
-    </div>
-    </div>
+        </div>
+
+   
+   
 </section>
+        
+
+
 
 {% comment %} <div class="detail__img">
     <img src="{{project.img}}" alt="{{project.name}}" />

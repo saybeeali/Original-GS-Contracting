@@ -70,6 +70,7 @@ body {
 
   .detail__container {
     margin-top: 50px;
+    text-align: center;
   }
   .detail__work {
     width: auto;
@@ -274,5 +275,6 @@ html,body {
 .card {
   height: auto;
   width: 400px;
-  
+  max-width: fit-content;
+  max-height: fit-content;
 }

@@ -8573,7 +8573,7 @@ textarea.form-control {
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:focus {
       /* border-color: #d99c22 !important; */
-      background: #d99c22 !important; }
+      background:  var(--blue)!important; }
 
 .contactForm .form-control {
   border: none;

@@ -278,3 +278,6 @@ html,body {
   max-width: fit-content;
   max-height: fit-content;
 }
+.project-info{
+  padding-bottom: 50px;
+}

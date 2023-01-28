@@ -1,16 +1,36 @@
 from django.shortcuts import render
 from django.views import View 
-# from django.http import HttpResponse
+from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from django.views.generic import DetailView
 from .models import Project
-
+from .models import Contact
+from .forms import ContactForm
 class Home(TemplateView):
     template_name = "home.html"
 class About(TemplateView):
     template_name = "about.html"
-class Contact(TemplateView):
-    template_name = "contact.html"
+
+class Success(TemplateView):
+    template_name = "success.html" 
+    
+# class Contact(TemplateView):
+#     template_name = "contact.html"
+
+def Contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'success.html')
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'contact.html', context)
+    
+        
+
+
+    
 
 
 class ProjectList(TemplateView):

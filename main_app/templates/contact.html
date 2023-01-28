@@ -47,7 +47,7 @@
                         <div class="col-lg-6">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 
-                                <p class="mb-4">Call or Email us now for a free estimate!</p>
+                                <p class="mb-4">Call/Text or Email us now for a free estimate!</p>
                                 <div id="form-message-warning" class="mb-4"></div> 
                           <div id="form-message-success" class="mb-4">
                         Your message was sent, thank you!
@@ -76,7 +76,9 @@
                               </div>
                                     </div>
                                 </div>
-                               
+                                <form action ='' method="post" id="contactForm" name="contactForm" class="contactForm">
+                                    {% csrf_token %}
+                                    {% comment %} {{ form }} {% endcomment %}
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
@@ -100,13 +102,13 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                                <input type="submit" value="Submit" class="btn btn-primary">
                                                 <div class="submitting"></div>
                                             </div>
                                         </div>
                                     </div>
                                 
-                                
+                                </form>
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex align-items-stretch">
@@ -119,6 +121,7 @@
         </div>
     </div>
 </section>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>

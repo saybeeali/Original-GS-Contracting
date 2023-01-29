@@ -18,6 +18,7 @@ body {
   .title {
     color: #ffffff;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
   }
   
   .gallery {
@@ -282,12 +283,27 @@ html,body {
     object-fit:none
   
 }
-.card {
+/* .card {
   height: auto;
-  width: 400px;
+  width: auto;
   max-width: fit-content;
   max-height: fit-content;
+} */
+
+.article {
+    height: auto;
+    /* width: 400px; */
+    max-width: fit-content;
+    max-height: fit-content;
 }
+
+.project-detail {
+    height: auto;
+    width: 250px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
 .project-info{
   padding-bottom: 50px;
 }

@@ -17,6 +17,7 @@ body {
   
   .title {
     color: #ffffff;
+    font-family: 'Playfair Display', serif;
   }
   
   .gallery {
@@ -8609,4 +8610,5 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500;
-  color: #e3b04b; }
+  color: #e3b04b; 
+}

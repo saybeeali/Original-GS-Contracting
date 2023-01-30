@@ -28,6 +28,18 @@ body {
     gap: 30px;
     padding-top: 50px;
   }
+  .navbar-item{
+    font-family: 'Squada One', cursive;
+    color: #0012b2;
+    font-size: 20px;
+
+  }
+  .navbar-item-logo{
+    font-family: 'Squada One', cursive;
+    color: #0012b2;
+    font-size: 30px;
+
+  }
   .services{
     font-family: 'Squada One', cursive;
     text-align: center;
@@ -173,7 +185,7 @@ hr {
 }
 
 .blog-posts .post .post-category {
-  color: #ffffff;
+  color: #0716ef;
 }
 
 .blog-posts .post .post-title {
@@ -263,7 +275,7 @@ html,body {
     margin: 1rem 5rem;
   }
 
-  .navbar-brand {
+  /* .navbar-brand {
     position: relative;
     background: url(https://i.imgur.com/BYALeHa.png);
     width: 112px;
@@ -271,7 +283,7 @@ html,body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 /* DETAILS CSSSSSSSS */
 .detailpic {
@@ -3667,10 +3679,6 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none; }
 
-.burger {
-    border: 1px solid red;
-    /* margin-left: 500px; */
-}
 
 .nav-link {
   display: block;

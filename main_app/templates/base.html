@@ -23,7 +23,7 @@
     </head>
     <body >
      
-        <nav class="navbar">
+        {% comment %} <nav class="navbar">
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
@@ -68,8 +68,40 @@
                                     Logout
                                 </div> {% endcomment %}
                             {% comment %} </div> {% endcomment %}
-                        {% comment %} </div> {% endcomment %}
-                    {% comment %} </div> {% endcomment %}
+                        {% comment %} </div>
+                    </div>
+                </div>
+            </div>
+        </nav> {% endcomment %}
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item-logo" href="/">
+                       <img src = "{% static 'images//G.S_Logo__1_-removebg-preview.png' %}" style= "height:50px; width:60px;"/>
+                    </a>
+                    <span class="navbar-burger burger is-active" data-target="navbarMenu">
+                            <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu is-active">
+                    <div class="navbar-end">
+                        <a class="navbar-item is-active" href ="/">
+                                Home
+                            </a>
+                        <a class="navbar-item" href ="/about">
+                                About us
+                            </a>
+                        <a class="navbar-item" href ="/projects">
+                                Our Services
+                            </a>
+                        <a class="navbar-item" href ="/contact">
+                                Contact
+                            </a>
+                       
+                
+                    </div>
                 </div>
             </div>
         </nav>

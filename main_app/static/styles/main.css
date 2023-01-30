@@ -344,7 +344,7 @@ html,body {
 
 .project-detail {
     height: auto;
-    width: 250px;
+    width: 375px;
     max-width: fit-content;
     max-height: fit-content;
 }

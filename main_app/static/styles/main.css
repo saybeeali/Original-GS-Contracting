@@ -32,6 +32,7 @@ body {
     font-family: 'Squada One', cursive;
     color: #0012b2;
     font-size: 20px;
+    letter-spacing: 2px;
 
   }
   .navbar-item-logo{
@@ -226,6 +227,14 @@ html,body {
   height: 500px;
   background-color: rgb(35, 27, 27);
   }
+  .hero-body-about
+  {background-image: url(https://patrickahearn.com/wp-content/uploads/2020/01/patrick-ahearn_blog_5-reasons-to-build-a-traditional-style-home_01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-color: rgb(35, 27, 27);
+  }
   .articles {
     margin: 5rem 0;
     margin-top: -200px;
@@ -234,7 +243,7 @@ html,body {
       line-height: 1.9;
       margin: 15px 0;
   }
-  .author-image {
+  /* .author-image {
       position: absolute;
       top: -30px;
       left: 50%;
@@ -243,7 +252,31 @@ html,body {
       margin-left: -30px;
       border: 3px solid #ccc;
       border-radius: 50%;
+  } */
+  .about-p{
+    text-align: center;
   }
+  
+  @media only screen and (max-width: 425px){
+    .about-p{
+      text-align: center;
+      font-size: 16px;
+    }
+    
+
+   
+  }
+
+  .author-image {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 90px;
+  height: 80px;
+  margin-left: -40px;
+  border: 3px solid #ccc;
+  border-radius: 10%;
+}
   .media-center {
     display: block;
     margin-bottom: 1rem;

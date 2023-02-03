@@ -26,12 +26,18 @@
                             <div class="media">
                                 <div class="media-content">
                                     <p class="title is-4">{{work.name}}</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {% empty %}
+                <article class="message">
+                    <div class="message-header">
+                        <p>No Exercises Available</p>
+                    </div>
+                </article>
               
             
             {% endfor %}

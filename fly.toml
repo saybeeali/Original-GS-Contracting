@@ -1,6 +1,6 @@
-# fly.toml file generated for original-gscontracting on 2023-01-28T19:44:10-05:00
+# fly.toml file generated for original-gs-contracting on 2023-02-02T14:09:53-05:00
 
-app = "original-gscontracting"
+app = "original-gs-contracting"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

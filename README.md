@@ -88,14 +88,7 @@ To run this website locally or on a server, follow these steps:
 
 The SQL database attached to this website is used to store customer information and daily work records. You can access and manage the database through the Django admin panel.
 
-## Contributing
-
-Contributions to improve this project are welcome! Feel free to open issues or submit pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for using and contributing to the Original GS Contracting website project! If you have any questions or need further assistance, please don't hesitate to reach out.
+Thank you for checking out the Original GS Contracting website project! If you have any questions or need further assistance, please don't hesitate to reach out.

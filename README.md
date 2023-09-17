@@ -1,8 +1,5 @@
-# Original-GS-Contracting
 
 https://original-gs-contracting.fly.dev/
-
-That sounds like a great project! Here's a template you can use for your README file to effectively showcase the website you built for Original GS Contracting using Python and Django:
 
 # Original GS Contracting Website
 

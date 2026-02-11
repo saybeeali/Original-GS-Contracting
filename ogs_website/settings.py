@@ -28,7 +28,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost","original-gs-contracting.fly.dev" ]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost","original-gs-contracting.fly.dev","gscontractingny.com","www.gscontractingny.com"]
 
 CSRF_TRUSTED_ORIGINS = ["https://original-gs-contracting.fly.dev"]
 

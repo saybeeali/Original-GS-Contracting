@@ -15,20 +15,16 @@ processes = []
   auto_rollback = true
 
 [[services]]
-  http_checks = []
-  internal_port = 8000
-  processes = ["app"]
   protocol = "tcp"
-  script_checks = []
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
-    type = "connections"
+  internal_port = 8000
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
 
   [[services.ports]]
-    force_https = true
-    handlers = ["http"]
     port = 80
+    handlers = ["http"]
+    force_https = true
 
   [[services.ports]]
     handlers = ["tls", "http"]
@@ -41,5 +37,5 @@ processes = []
     timeout = "2s"
 
 [[statics]]
-  guest_path = "/app/public"
+  guest_path = "/code/staticfiles"
   url_prefix = "/static/"

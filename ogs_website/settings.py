@@ -28,10 +28,18 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost","original-gs-contracting.fly.dev","gscontractingny.com","www.gscontractingny.com"]
-
-CSRF_TRUSTED_ORIGINS = ["https://original-gs-contracting.fly.dev"]
-
+ALLOWED_HOSTS = [
+    '127.0.0.1', 
+    'localhost', 
+    'original-gs-contracting.fly.dev', 
+    'gscontractingny.com', 
+    'www.gscontractingny.com'
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://original-gs-contracting.fly.dev",
+    "https://gscontractingny.com",
+    "https://www.gscontractingny.com"
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -130,3 +138,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'main_app/static']
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Force all connections to HTTPS
+SECURE_SSL_REDIRECT = True
+
+# Standardize on 'www.gscontractingny.com' (Optional but professional)
+# If someone types 'gscontractingny.com', it will redirect to 'www.gscontractingny.com'
+PREPEND_WWW = True 
+
+# Ensures the site stays secure by telling browsers to only use HTTPS
+SECURE_HSTS_SECONDS = 31536000 
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+
+# Required for Fly.io/Gunicorn to recognize HTTPS behind the proxy
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

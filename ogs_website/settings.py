@@ -137,13 +137,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'main_app/static']
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# This version is "softer" and won't crash the whole site if a file is missing
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Force all connections to HTTPS
 SECURE_SSL_REDIRECT = True
 
 # Standardize on 'www.gscontractingny.com' (Optional but professional)
 # If someone types 'gscontractingny.com', it will redirect to 'www.gscontractingny.com'
-PREPEND_WWW = True 
+PREPEND_WWW = False
 
 # Ensures the site stays secure by telling browsers to only use HTTPS
 SECURE_HSTS_SECONDS = 31536000 

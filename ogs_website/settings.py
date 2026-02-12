@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'main_app.middleware.DomainRedirectMiddleware', # Add this line here
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -145,7 +146,7 @@ SECURE_SSL_REDIRECT = True
 
 # Standardize on 'www.gscontractingny.com' (Optional but professional)
 # If someone types 'gscontractingny.com', it will redirect to 'www.gscontractingny.com'
-PREPEND_WWW = False
+PREPEND_WWW = True
 
 # Ensures the site stays secure by telling browsers to only use HTTPS
 SECURE_HSTS_SECONDS = 31536000 
